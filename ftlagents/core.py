@@ -31,6 +31,6 @@ def make_agent(tools, model):
     return agent
 
 
-def run_agent(tools, model, problem_statement):
+def run_agent(tools, model, prompt):
     agent = make_agent(tools, model)
-    return agent.run(problem_statement, stream=True)
+    return agent.run(prompt, stream=True)
